@@ -1,0 +1,230 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #c0c1c6, #e9eaf4);
+  padding: 20px;
+  color: #2C3E50;
+}
+
+/* Container */
+.container {
+  max-width: 450px;
+  margin: 0 auto;
+  background: #f7f8fc;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(44, 62, 80, 0.1);
+  position: relative;
+}
+
+/* Header Section */
+.header {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.header h1 {
+  font-weight: 900;
+  font-size: 2.2rem;
+  color: #14916C; /* Green */
+  letter-spacing: 3px;
+  position: relative;
+  display: inline-block;
+}
+
+.header h1 .fusion {
+  position: relative;
+  color: #14916C;
+}
+
+.header h1 .fusion::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 40px;
+  background: radial-gradient(circle at center,
+    #3455b9 0%, #ea4335 60%, #fbbc05 90%);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+/* Subtitle */
+.subtitle {
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #2b3a67;
+  letter-spacing: 1.5px;
+}
+
+/* Big Promo Price */
+.promo-price {
+  position: relative;
+  margin: 20px auto;
+  text-align: center;
+  font-size: 3.5rem;
+  color: #e63946; /* Red */
+  font-weight: 900;
+  background: #fff9db;
+  display: inline-block;
+  padding: 20px 40px;
+  border-radius: 25px;
+  box-shadow:
+    8px 8px 0 #f1c40f,
+    -6px -6px 0 #2c3a50;
+}
+
+.promo-price .currency {
+  font-size: 2.5rem;
+  vertical-align: top;
+  margin-right: 5px;
+  font-weight: 900;
+}
+
+.promo-subtext {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-top: 5px;
+  letter-spacing: 2px;
+}
+
+/* Burst star shape behind promo price */
+.burst {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px;
+  height: 300px;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.burst svg polygon {
+  fill: #ffdd40;
+  stroke: black;
+  stroke-width: 2px;
+  filter: drop-shadow(3px 3px 2px rgba(0,0,0,0.14));
+}
+
+/* No lock-in period badge */
+.no-lock {
+  background-color: #1abc9c;
+  color: white;
+  font-weight: 700;
+  text-align: center;
+  padding: 8px 15px;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  width: fit-content;
+  margin: 0 auto 30px auto;
+  letter-spacing: 1.6px;
+  box-shadow: 0 0 10px #16a08580;
+  user-select: none;
+}
+
+/* Plans Section */
+.plans {
+  display: grid;
+  gap: 15px;
+}
+
+.plan {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: white;
+  user-select: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.plan .label {
+  padding: 8px 15px;
+  border-radius: 10px;
+  font-weight: 900;
+  font-size: 1rem;
+  min-width: 90px;
+  text-align: center;
+  color: #1a1a1a;
+}
+
+.plan .speed {
+  letter-spacing: 1.5px;
+  flex-grow: 1;
+  margin-left: 20px;
+}
+
+.plan .price {
+  min-width: 110px;
+  text-align: right;
+}
+
+/* Individual colors */
+.bronze {
+  background: linear-gradient(45deg, #625344, #523f2b);
+}
+
+.silver {
+  background: linear-gradient(45deg, #bdc3c7, #909497);
+  color: #2c3e50;
+}
+
+.gold {
+  background: linear-gradient(45deg, #f4c542, #c09007);
+  color: #3d2f00;
+}
+
+.supreme {
+  background: linear-gradient(45deg, #6a5acd, #4f3fbf);
+}
+
+/* Contact Info Section */
+.contact {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 0.95rem;
+  letter-spacing: 0.8px;
+  color: #34495e;
+}
+
+.contact a {
+  color: #2980b9;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+.contact .email, .contact .facebook {
+  margin: 10px 0;
+  display: block;
+}
+
+.contact .phone {
+  margin-top: 10px;
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: #e74c3c;
+}
+
+/* Icon styles */
+.icon {
+  vertical-align: middle;
+  margin-right: 8px;
+}
